@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dummy College Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Simulate college website header/navbar */
+.header {
+    background: crimson;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Simulate white wrapper/container around iframe */
+.embed-wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
+}
+
+/* Iframe Container */
+.iframe-container {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    Dummy College Website Header
+</div>
+
+<div class="embed-wrapper">
+    <h2>Campus Virtual Tour</h2>
+
+    <div class="iframe-container">
+        <iframe
+            src="https://ar-vr-sooty.vercel.app/tours/19a95946-f0cf-45f5-aa2b-78d2853b4d2c/preview"
+            allow="fullscreen; accelerometer; gyroscope; magnetometer; xr-spatial-tracking; autoplay; camera; microphone"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</body>
+</html>
